@@ -1,0 +1,6 @@
+{
+  "name": "JASKIS - Tim Jaskis",
+  "description": "Website Layanan Bantuan Pengerjaan Tugas Akademik Modern dengan Dashboard Admin & Tracking Pesanan",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

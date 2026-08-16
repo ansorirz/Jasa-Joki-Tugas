@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #FAFAFB;
+    color: #0F172A;
+    font-family: 'Open Sans', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* ========================================================================= */
+/* PREMIUM BACKGROUND PATTERNS & MOTIFS                                      */
+/* ========================================================================= */
+
+/* 1. Tech & Engineering Grid Pattern */
+.bg-pattern-grid {
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Darker / Slate Grid */
+.bg-pattern-grid-slate {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* White grid on colored backgrounds */
+.bg-pattern-grid-white {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* 2. Precision Dot Matrix Pattern */
+.bg-pattern-dots {
+  background-image: radial-gradient(rgba(99, 102, 241, 0.12) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+.bg-pattern-dots-slate {
+  background-image: radial-gradient(rgba(51, 65, 85, 0.1) 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+.bg-pattern-dots-white {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* 3. Isometric Geometric Cube Lattice Motif */
+.bg-pattern-isometric {
+  background-image: 
+    linear-gradient(30deg, rgba(99, 102, 241, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(99, 102, 241, 0.03) 87.5%, rgba(99, 102, 241, 0.03)),
+    linear-gradient(150deg, rgba(99, 102, 241, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(99, 102, 241, 0.03) 87.5%, rgba(99, 102, 241, 0.03)),
+    linear-gradient(30deg, rgba(99, 102, 241, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(99, 102, 241, 0.03) 87.5%, rgba(99, 102, 241, 0.03)),
+    linear-gradient(150deg, rgba(99, 102, 241, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(99, 102, 241, 0.03) 87.5%, rgba(99, 102, 241, 0.03)),
+    linear-gradient(60deg, rgba(59, 130, 246, 0.04) 25%, transparent 25.5%, transparent 75%, rgba(59, 130, 246, 0.04) 75%, rgba(59, 130, 246, 0.04)),
+    linear-gradient(60deg, rgba(59, 130, 246, 0.04) 25%, transparent 25.5%, transparent 75%, rgba(59, 130, 246, 0.04) 75%, rgba(59, 130, 246, 0.04));
+  background-size: 56px 97px;
+  background-position: 0 0, 0 0, 28px 48px, 28px 48px, 0 0, 28px 48px;
+}
+
+/* 4. Elegant Diagonal Hatch Motif */
+.bg-pattern-diagonal {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(99, 102, 241, 0.03),
+    rgba(99, 102, 241, 0.03) 1px,
+    transparent 0,
+    transparent 14px
+  );
+}
+
+/* 5. Radial Ambient Mesh Glows */
+.bg-mesh-hero {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 90% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+    #FFFFFF;
+}
+
+.bg-mesh-dark {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 45%),
+    #0F172A;
+}
+
+/* ========================================================================= */
+/* TYPOGRAPHY SYSTEM (Montserrat, Poppins, Roboto, Open Sans, Lato)           */
+/* ========================================================================= */
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-outfit {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.font-jakarta {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+.font-sf {
+  font-family: 'Roboto', 'Open Sans', -apple-system, sans-serif;
+}
+
+/* Gradient Utilities */
+.bg-gradient-purple-blue {
+  background: linear-gradient(135deg, #6366F1 0%, #3B82F6 100%);
+}
+
+.text-gradient-purple-blue {
+  background: linear-gradient(135deg, #6366F1 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient-purple-blue {
+  border-image: linear-gradient(135deg, #6366F1, #3B82F6) 1;
+}
+
+/* Soft Custom Shadows matching reference */
+.shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.02);
+}
+
+/* Hide scrollbar for mobile horizontal scroll menu */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.shadow-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(99, 102, 241, 0.15), 0 8px 12px -3px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Specific Dark Sidebar Scrollbar */
+.scrollbar-dark::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Specific Clean Slate Scrollbar */
+.scrollbar-slate::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollbar-slate::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.scrollbar-slate::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.scrollbar-slate::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Hide scrollbar for clean UI elements */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
